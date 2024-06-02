@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gimp_kandinsky"
+version = "0.0.1"
+dependencies = [
+	'kandinsky2 @ git+https://github.com/ai-forever/Kandinsky-2.git',
+	'clip @ git+https://github.com/openai/CLIP.git',
+	'Flask',
+	'waitress'
+]
